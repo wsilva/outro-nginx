@@ -4,6 +4,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 VOLUME ["/var/cache/nginx"]
 EXPOSE 80 443
-RUN echo "<h1>Curso Docker pelo Github</h1>" | \
+RUN echo "<h1>Curso Docker autobuild</h1>" | \
     tee /var/www/html/index.html
 CMD ["nginx", "-g", "daemon off;"]
